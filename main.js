@@ -1,5 +1,6 @@
 /*Snack 1:
 Crea un array di 10 oggetti che rappresentano una zucchina, indicando per ognuna varietà, peso e lunghezza. Calcola quanto pesano tutte le zucchine. (modificato)*/
+//aggiungo levarietà di zucchine
 const zucchine = [
     {
       varieta: "Romanesca",
@@ -52,3 +53,7 @@ const zucchine = [
       lunghezza: 19
     }
   ];
+  //calcolo il peso totale di tutte le zucchine (should be 30 kg)
+  let somma = 0;
+zucchine.forEach(zucchina => somma += zucchina.peso);
+console.log(`Il peso totale delle zucchine è di ${somma.toFixed(2)}kg`);
